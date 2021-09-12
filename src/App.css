@@ -1,0 +1,109 @@
+.root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  
+  margin: 0rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #202020;
+  font-size: 10px;
+  color: honeydew;
+}
+
+.App > *  {
+  font-size: 1.2rem;
+}
+
+.App > *  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Heading {
+  height: 30vh;
+  width: 100vw;
+  font-size: 3rem
+}
+
+.First  {
+  height: 70vh;
+  width: 100vw;
+}
+.Second  {
+  height: 70vh;
+  width: 100vw;
+}
+.Third  {
+  height: 70vh;
+  width: 100vw;
+}
+.Fourth  {
+  height: 70vh;
+  width: 100vw;
+}
+.Fifth  {
+  height: 70vh;
+  width: 100vw;
+}
+.Last  {
+  height: 70vh;
+  width: 100vw;
+}
+.errMsg {
+  color: red;
+  font-size: small;
+}
+.hidden {
+  display: none;
+}
+.btn  {
+  padding: 0.5rem 1rem 0.7rem 1rem;
+  min-width: 20rem;
+  width: auto;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #f0e68c;
+  color: indianred;
+  margin-top: 1rem;
+  animation-name: fadeInNSlideUp;
+  animation-duration: 0.35s;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.displayedNamesDiv  {
+  width: 20rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  max-height: 20rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@keyframes fadeInNSlideUp   {
+  0%  {
+      color: rgba(206, 93, 93, 0);
+      transform: translateY(2rem);
+      background-color: rgba(240, 230, 140, 0);
+  }
+
+  100%    {
+      color: rgba(206, 93, 93, 1);
+      transform: translateY(0rem);
+      background-color: rgba(240, 230, 140, 1);
+  }
+}
